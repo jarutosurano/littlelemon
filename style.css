@@ -1,0 +1,68 @@
+/* Reset padding, margin, and font size for all elements */
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+}
+
+/* Body styling */
+body {
+    font-family: 'Noto Serif NP Hmong', serif; /* Fallback font */
+}
+
+/* Card Images */
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Adjust the height as needed */
+    object-fit: cover; 
+}
+
+/* Promotional Banner Styling */
+.promo-banner {
+    background-image: url('images/Mediterranean.jpg'); /* Image from https://unsplash.com/photos/an-aerial-view-of-a-white-village-on-a-cliff-tE4UjVJjDpw */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    position: relative;
+    color: #fff; 
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for better branding */
+    text-align: center; /* Center align text */
+    padding: 15rem 0; /* Adjust vertical padding for larger size */
+}
+
+/* Dark overlay for the promotional banner */
+.promo-banner::before {
+    content: ''; /* Empty content for the overlay */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);  
+    z-index: 1;  
+}
+
+/* Ensure promotional banner text and buttons are above the overlay */
+.promo-banner h1,
+.promo-banner p,
+.promo-banner button {
+    position: relative;
+    z-index: 2; /* Position elements above the overlay */
+    margin-bottom: 1rem; /* Add some bottom margin for spacing */
+    text-align: center; /* Center align text */
+}
+
+
+/* Footer Logo Styling */
+#footer-logo {
+    display: inline;
+    height: 4rem;
+    margin: 1rem;
+}
+
+/* Navbar Logo Styling */
+#nav-bar-logo {
+    display: inline;
+    height: 6rem;
+    margin: 1rem;
+}
